@@ -28,7 +28,7 @@ $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -I $(INCS) -c $< -o $@
 
 bonus: $(OBJSB) 
-	ar -rcs $(NAME) $(OBJSB)	
+	ar -rcs $(NAME) $(OBJSB)
 
 clean:
 	rm -f $(OBJS) $(OBJSB)
@@ -38,4 +38,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all fclean clean bonus 
+.PHONY: all fclean clean bonus re
